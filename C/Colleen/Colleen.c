@@ -1,5 +1,5 @@
 #include <stdio.h>
-//first
+//wrong comment synthax
 void quine(void) {}
 int main()
 {

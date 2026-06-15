@@ -1,7 +1,7 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra
 
-NAME    = Colleen
+NAME    = Sully
 
 all: $(NAME)
 
