@@ -8,10 +8,13 @@ all: $(NAME)
 $(NAME): $(NAME).c
 	$(CC) $(CFLAGS) -o $(NAME) $(NAME).c
 
-diff: $(NAME)
-	./$(NAME) > $(NAME)
-	diff tmp_$(NAME) $(NAME).c
-	rm -f tmp_$(NAME)
+diff1: $(NAME)
+	./$(NAME)
+	diff $(NAME).c $(NAME)_0.c
+
+diff2: $(NAME)
+	./$(NAME)
+	diff $(NAME)_3.c $(NAME)_2.c
 
 clean:
 	rm -f $(NAME)
@@ -30,4 +33,4 @@ clean:
 
 re: clean all
 
-.PHONY: all diff clean re
+.PHONY: all diff1 diff2 clean re
