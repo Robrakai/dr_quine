@@ -24,6 +24,3 @@ clean:
 re: clean all
 
 .PHONY: all diff clean re
-
-
-# nasm -f elf64 Colleen.s -o Colleen.o && gcc Colleen.o -o Colleen -no-pie
