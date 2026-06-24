@@ -14,7 +14,6 @@ $(NAME): $(NAME).s
 diff: $(NAME)
 	./$(NAME)
 	diff $(NAME)_kid.s $(NAME).s
-	rm -f test
 
 clean:
 	rm -f $(NAME)
