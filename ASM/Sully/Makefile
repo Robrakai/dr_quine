@@ -15,19 +15,25 @@ diff: $(NAME)
 	diff $(NAME)_3.s $(NAME)_2.s
 
 clean:
-	rm -f $(NAME).o
 	rm -f $(NAME)
-	rm -f $(NAME)_0.c
+	rm -f $(NAME).o
+	rm -f $(NAME)_0.s
+	rm -f $(NAME)_0.o
 	rm -f $(NAME)_0
-	rm -f $(NAME)_1.c
+	rm -f $(NAME)_1.s
+	rm -f $(NAME)_1.o
 	rm -f $(NAME)_1
-	rm -f $(NAME)_2.c
+	rm -f $(NAME)_2.s
+	rm -f $(NAME)_2.o
 	rm -f $(NAME)_2
-	rm -f $(NAME)_3.c
+	rm -f $(NAME)_3.s
+	rm -f $(NAME)_3.o
 	rm -f $(NAME)_3
-	rm -f $(NAME)_4.c
+	rm -f $(NAME)_4.s
+	rm -f $(NAME)_4.o
 	rm -f $(NAME)_4
-	rm -f $(NAME)_5.c
+	rm -f $(NAME)_5.o
+	rm -f $(NAME)_5.s
 	rm -f $(NAME)_5
 
 
